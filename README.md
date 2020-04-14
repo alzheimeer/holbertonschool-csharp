@@ -1,6 +1,6 @@
 # Holberton School - C#
 
-<img alt="C#" src="https://github.com/alzheimeer/holbertonschool-csharp/blob/master/csharp.svg" width=40% height=40%>
+<img alt="C#" src="csharp.svg" width=40% height=40%>
 
 # Documentation
 
@@ -19,4 +19,4 @@ This repository contains example projects using c# programming languages. In the
 
 ## Author
 ### Edgar Quintero "Alzheimeer" 
-Email: <fogniebla@hotmail.com> Twitter: [@alzheimeer](https://twitter.com/alzheimeer)
+Email: <fogniebla@hotmail.com> Twitter: [@alzheimeer](https://twitter.com/alzheimeer) Linkedin: [alzheimeer](https://www.linkedin.com/in/alzheimeer)
