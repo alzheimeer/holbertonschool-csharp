@@ -12,7 +12,7 @@ namespace _6_print_comb2
                     int d2 = i / 10;
                     if(d1 != d2 && d1 > d2)
                     {
-                        if(i!=99)
+                        if(i!=89)
                             Console.Write("{0:D2}, ", i);
                         else
                             Console.Write("{0:D2}\n", i);
