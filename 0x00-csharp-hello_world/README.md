@@ -1,6 +1,6 @@
 # 0x00. C# - Hello, World - 04-13-2020
 
-<img alt="C#" src="logo.jpg" width=80% height=80%>
+<img alt="C#" src="../logo.jpg" width=80% height=80%>
 
 **What I learned from this project**
 

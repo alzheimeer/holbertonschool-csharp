@@ -1,6 +1,6 @@
 0x01. C# - if/else, loops, functions
 
-<img alt="C#" src="logo.jpg" width=80% height=80%>
+<img alt="C#" src="../logo.jpg" width=80% height=80%>
 
 **What I learned from this project**
 
