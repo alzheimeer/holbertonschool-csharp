@@ -1,6 +1,6 @@
 # 0x00. C# - Hello, World - 04-13-2020
 
-<img alt="C#" src="../csharp.svg" width=40% height=40%>
+<img alt="C#" src="logo.jpg" width=80% height=80%>
 
 **What I learned from this project**
 
@@ -40,7 +40,7 @@ Common Language Runtime
 ## Exercises
 
 [0. Initialize new project](./0-initialize_new_project.sh)
-```javascript
+```
 Write a Bash script that initializes a new C# project inside a folder titled 0-new_project.
 
 * Use the command dotnet

@@ -1,6 +1,6 @@
 # Holberton School - C#
 
-<img alt="C#" src="csharp.svg" width=40% height=40%>
+<img alt="C#" src="logo.jpg" width=80% height=80%>
 
 # Documentation
 
@@ -16,6 +16,7 @@ This repository contains example projects using c# programming languages. In the
 
 ## Projects
 1. [0x00-csharp-hello_world](./0x00-csharp-hello_world)
+1. [0x01. C# - if/else, loops, functions](./0x01-csharp-ifelse_loops_methods)
 
 ## Author
 ### Edgar Quintero "Alzheimeer" 
