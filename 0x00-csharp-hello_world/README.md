@@ -1,5 +1,6 @@
 # 0x00. C# - Hello, World - 04-13-2020
 
+<img alt="C#" src="https://github.com/alzheimeer/holbertonschool-csharp/blob/master/csharp.svg" width=40% height=40%>
 
 ## What is the meaning behind the name C#?
 C++++
