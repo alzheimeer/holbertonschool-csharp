@@ -20,8 +20,15 @@ class Array
 
         
         for(int i=0; i < size;i++) 
-            array[i] =  i; 
-
+            {
+                if(i != size-1)
+                    Console.Write("{0} ",i);
+                else
+                    Console.Write(i);
+                array[i] =  i; 
+                
+            }
+        Console.WriteLine();
         return array;
     }
 }
