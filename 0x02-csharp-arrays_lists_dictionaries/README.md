@@ -63,75 +63,75 @@ Show
 
 What is a collection?
 
-*   a class
+- [ ]   a class
     
-*   a data type
+- [ ]   a data type
     
-*   a group of related objects
+- [ ]   a group of related objects
     
 
 #### Question #1
 
 The following are generic collections:
 
-*   `List<T>`
+- [ ]   `List<T>`
     
-*   `Hashtable`
+- [ ]   `Hashtable`
     
-*   `SortedList<TKey,TValue>`
+- [ ]   `SortedList<TKey,TValue>`
     
-*   `Dictionary<TKey,TValue>`
+- [ ]   `Dictionary<TKey,TValue>`
     
-*   `ArrayList`
+- [ ]   `ArrayList`
     
 
 #### Question #2
 
 An array’s number of dimensions and length of each dimension can be changed during the lifetime of that array’s instance.
 
-*   True
+- [ ]   True
     
-*   False
+- [ ]   False
     
 
 #### Question #3
 
 What is the default value of a numeric array’s elements?
 
-*   null
+- [ ]   null
     
-*   0
+- [ ]   0
     
-*   1
+- [ ]   1
     
 
 #### Question #4
 
 The `List<T>` class in C#:
 
-*   does not allow duplicate elements
+- [ ]   does not allow duplicate elements
     
-*   starts indexes at 0
+- [ ]   starts indexes at 0
     
-*   is automatically sorted
+- [ ]   is automatically sorted
     
 
 #### Question #5
 
 The `Dictionary` class in C# is implemented as a hash table.
 
-*   True
+- [ ]   True
     
-*   False
+- [ ]   False
     
 
 #### Question #6
 
 If items need to be added or removed from a collection in a loop, which of the following should be used?
 
-*   `for`
+- [ ]   `for`
     
-*   `foreach`
+- [ ]   `foreach`
     
 
 * * *

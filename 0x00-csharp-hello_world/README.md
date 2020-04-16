@@ -94,77 +94,77 @@ Quiz questions
 
 What is the meaning behind the name C#?
 
-*   C++++
+- [ ]   C++++
     
-*   C Hash
+- [ ]   C Hash
     
-*   Inspired from musical notation where a sharp indicates that the written note should be made a half-step higher in pitch
+- [ ]   Inspired from musical notation where a sharp indicates that the written note should be made a half-step higher in pitch
     
 
 #### Question #1
 
 Who is the lead architect of the development team of C#?
 
-*   Bill Gates
+- [ ]   Bill Gates
     
-*   Anders Hejlseberg
+- [ ]   Anders Hejlseberg
     
-*   James Gosling
+- [ ]   James Gosling
     
 
 #### Question #2
 
 What is .NET framework?
 
-*   a web development tool
+- [ ]   a web development tool
     
-*   a generic top-level domain used in DNS
+- [ ]   a generic top-level domain used in DNS
     
-*   a software framework developed by Microsoft
+- [ ]   a software framework developed by Microsoft
     
 
 #### Question #3
 
 What is CLR?
 
-*   Common Language Runtime
+- [ ]   Common Language Runtime
     
-*   C# Language Reader
+- [ ]   C# Language Reader
     
-*   Clear
+- [ ]   Clear
     
 
 #### Question #4
 
 What is Intermediate Language (IL) code?
 
-*   a language used by .NET Framework to generate machine-independent code
+- [ ]   a language used by .NET Framework to generate machine-independent code
     
-*   a language that is more difficult to learn
+- [ ]   a language that is more difficult to learn
     
-*   a language with a purpose similar to Java bytecode
+- [ ]   a language with a purpose similar to Java bytecode
     
 
 #### Question #5
 
 What method is used for writing text to standard output with a new line?
 
-*   Console.Write()
+- [ ]   Console.Write()
     
-*   Console.Print()
+- [ ]   Console.Print()
     
-*   Console.WriteLine()
+- [ ]   Console.WriteLine()
     
 
 #### Question #6
 
 What method is used for writing text to standard output without a new line?
 
-*   Console.Write()
+- [ ]   Console.Write()
     
-*   Console.Print()
+- [ ]   Console.Print()
     
-*   Console.WriteLine()
+- [ ]   Console.WriteLine()
     
 
 #### Question #7
@@ -185,11 +185,11 @@ What does the following code display?
     }
     
 
-*   0 1 2
+- [ ]   0 1 2
     
-*   1 2 3
+- [ ]   1 2 3
     
-*   number1 number2 number3
+- [ ]   number1 number2 number3
     
 
 #### Question #8
@@ -210,13 +210,13 @@ What does the following code display?
     }
     
 
-*   3 1 2
+- [ ]   3 1 2
     
-*   number2, number1, number2
+- [ ]   number2, number1, number2
     
-*   2 0 1
+- [ ]   2 0 1
     
-*   1 2 3
+- [ ]   1 2 3
     
 
 * * *
