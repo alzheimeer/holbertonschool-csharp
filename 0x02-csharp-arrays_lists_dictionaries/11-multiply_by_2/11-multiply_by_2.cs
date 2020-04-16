@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _11_multiply_by_2
+class Dictionary
 {
-    class Program
+    public static Dictionary<string, int> MultiplyBy2(Dictionary<string, int> myDict)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Dictionary<string, int> newDict = new Dictionary<string, int>();
+
+        foreach (KeyValuePair<string, int> entry in myDict)
+            newDict.Add(entry.Key, entry.Value*2);
+        return newDict;
+
     }
 }
