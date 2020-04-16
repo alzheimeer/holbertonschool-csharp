@@ -2,7 +2,7 @@
 
 <img alt="C#" src="../logo.jpg" width=70% height=70%>
 
-# 0x02. C# - Data Structures: Arrays, Lists, Dictionaries
+# 0x02. C# - Data Structures: Arrays, Lists, Dictionaries - 04-16-2020
 
 
 Resources
