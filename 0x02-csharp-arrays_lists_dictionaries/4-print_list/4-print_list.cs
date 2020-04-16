@@ -1,12 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _4_print_list
+class List
 {
-    class Program
+    public static List<int> CreatePrint(int size)
     {
-        static void Main(string[] args)
+        if (size < 0)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Size cannot be negative");
+            return null;
         }
+        
+        List<int> listA = new List<int>();
+
+        if (size == 0)
+	    {
+	        Console.WriteLine();
+	        return listA;
+        }
+
+        
+        for(int i=0; i < size;i++) 
+            {
+                if(i != size-1)
+                    Console.Write("{0} ",i);
+                else
+                    Console.Write(i);
+                listA.Add(i); 
+                
+            }
+        Console.WriteLine();
+        return listA;
+
     }
 }
