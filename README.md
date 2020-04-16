@@ -15,8 +15,8 @@ This repository contains example projects using c# programming languages. In the
   - setting up visual studio code for C# development
 
 ## Projects
-0. [0x00-csharp-hello_world](./0x00-csharp-hello_world) 04-13-2020
-1. [0x01. C# - if/else, loops, functions](./0x01-csharp-ifelse_loops_methods) 04-14-2020
+0. [0x00. C# - Hello World](./0x00-csharp-hello_world) 04-13-2020
+1. [0x01. C# - if/else, Loops, Functions](./0x01-csharp-ifelse_loops_methods) 04-14-2020
 2. [0x02. C# - Data Structures: Arrays, Lists, Dictionaries](./0x02-csharp-arrays_lists_dictionaries) 04-16-2020
 
 ## Author
