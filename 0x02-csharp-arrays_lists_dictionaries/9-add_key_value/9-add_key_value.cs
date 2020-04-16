@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _9_add_key_value
+class Dictionary
 {
-    class Program
+    public static Dictionary<string, string> AddKeyValue(Dictionary<string, string> myDict, string key, string value)
     {
-        static void Main(string[] args)
+        int i = 0;
+
+        foreach (KeyValuePair<string, string> entry in myDict)
         {
-            Console.WriteLine("Hello World!");
+            if(entry.Key == key)
+                i = 1;
         }
+        if(i == 1)
+            myDict[key] = value;
+        else 
+            myDict.Add(key, value);
+        
+        return myDict;
+        
     }
 }
