@@ -1036,4 +1036,3 @@ Write a program that creates and prints a [jagged array](https://intranet.hbtn.i
 *   Directory: `0x02-csharp-arrays_lists_dictionaries`
 *   File: `100-jagged_array/, 100-jagged_array/100-jagged_array.csproj, 100-jagged_array/100-jagged_array.cs`
 
-Copyright © 2020 Holberton School. All rights reserved.
