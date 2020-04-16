@@ -94,11 +94,11 @@ Quiz questions
 
 What is the meaning behind the name C#?
 
-- [ ]   C++++
+- [x]   C++++
     
 - [ ]   C Hash
     
-- [ ]   Inspired from musical notation where a sharp indicates that the written note should be made a half-step higher in pitch
+- [x]   Inspired from musical notation where a sharp indicates that the written note should be made a half-step higher in pitch
     
 
 #### Question #1
@@ -107,7 +107,7 @@ Who is the lead architect of the development team of C#?
 
 - [ ]   Bill Gates
     
-- [ ]   Anders Hejlseberg
+- [x]   Anders Hejlseberg
     
 - [ ]   James Gosling
     
@@ -120,14 +120,14 @@ What is .NET framework?
     
 - [ ]   a generic top-level domain used in DNS
     
-- [ ]   a software framework developed by Microsoft
+- [x]   a software framework developed by Microsoft
     
 
 #### Question #3
 
 What is CLR?
 
-- [ ]   Common Language Runtime
+- [x]   Common Language Runtime
     
 - [ ]   C# Language Reader
     
@@ -138,11 +138,11 @@ What is CLR?
 
 What is Intermediate Language (IL) code?
 
-- [ ]   a language used by .NET Framework to generate machine-independent code
+- [x]   a language used by .NET Framework to generate machine-independent code
     
 - [ ]   a language that is more difficult to learn
     
-- [ ]   a language with a purpose similar to Java bytecode
+- [x]   a language with a purpose similar to Java bytecode
     
 
 #### Question #5
@@ -153,14 +153,14 @@ What method is used for writing text to standard output with a new line?
     
 - [ ]   Console.Print()
     
-- [ ]   Console.WriteLine()
+- [x]   Console.WriteLine()
     
 
 #### Question #6
 
 What method is used for writing text to standard output without a new line?
 
-- [ ]   Console.Write()
+- [x]   Console.Write()
     
 - [ ]   Console.Print()
     
