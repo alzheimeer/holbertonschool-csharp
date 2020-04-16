@@ -1,12 +1,22 @@
 ﻿using System;
 
-namespace _3_print_array_reverse
+class Array
 {
-    class Program
+    public static void Reverse(int[] array)
     {
-        static void Main(string[] args)
+        int i;
+
+        if(array == null || array.Length == 0)
+            Console.WriteLine();
+        else
         {
-            Console.WriteLine("Hello World!");
+            for (i = array.Length - 1; i >= 0; i--)
+            {
+                Console.Write(array[i]);
+                if (i > 0)
+                    Console.Write(" ");
+            }
+        Console.WriteLine();
         }
     }
 }
