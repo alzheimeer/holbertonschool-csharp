@@ -7,11 +7,11 @@ class List
     {
         if(myList.Count == 0)
         {
-        Console.WriteLine("List is empty");
-        return -1;
+            Console.WriteLine("List is empty");
+            return -1;
         }
 
-        int eMax = 0;
+        int eMax = myList[0];
         foreach (int i in myList)
         {
             if(i > eMax)
