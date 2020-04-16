@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _7_delete_at
+class List
 {
-    class Program
+    public static List<int> DeleteAt(List<int> myList, int index)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        if(index < 0 || index > myList.Count)
+            Console.WriteLine("Index is out of range");
+        myList.Remove(myList[index]);
+        return myList;
     }
 }
