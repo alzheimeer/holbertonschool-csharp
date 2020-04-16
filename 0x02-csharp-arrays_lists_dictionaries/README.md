@@ -1,8 +1,8 @@
-0x02-csharp-arrays_lists_dictionaries
+
 
 <img alt="C#" src="../logo.jpg" width=70% height=70%>
 
- 0x02. C# - Data Structures: Arrays, Lists, Dictionaries
+# 0x02. C# - Data Structures: Arrays, Lists, Dictionaries
 
 Learning Objectives
 -------------------
@@ -1016,3 +1016,4 @@ Write a program that creates and prints a [jagged array](https://intranet.hbtn.i
 *   Directory: `0x02-csharp-arrays_lists_dictionaries`
 *   File: `100-jagged_array/, 100-jagged_array/100-jagged_array.csproj, 100-jagged_array/100-jagged_array.cs`
 
+Copyright © 2020 Holberton School. All rights reserved.
