@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _10_delete_key_value
+class Dictionary
 {
-    class Program
+    public static Dictionary<string, string> DeleteKeyValue(Dictionary<string, string> myDict, string key)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        myDict.Remove(key);
+	    return myDict;
     }
 }
