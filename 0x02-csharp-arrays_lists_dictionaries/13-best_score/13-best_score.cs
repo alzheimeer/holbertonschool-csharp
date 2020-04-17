@@ -12,7 +12,7 @@ class Dictionary
 			return "None";
         foreach(KeyValuePair<string, int> x in myList)
         {
-            if (x.Value > v)
+            if (x.Value >= v)
             {
                 v = x.Value;
                 c = x.Key;
