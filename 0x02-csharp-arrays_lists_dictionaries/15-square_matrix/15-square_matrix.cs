@@ -7,9 +7,9 @@ class Matrix
 		int col = myMatrix.GetLength(1);
         int[,] nueva = new int[row, col];
         
-        for (int f = 0; f < 3; f++)
+        for (int f = 0; f < row; f++)
         {
-            for (int c = 0; c < 3; c++)
+            for (int c = 0; c < col; c++)
                     nueva[f, c] = Convert.ToInt16(Math.Pow(myMatrix[f, c], 2));
         }
         return nueva;
