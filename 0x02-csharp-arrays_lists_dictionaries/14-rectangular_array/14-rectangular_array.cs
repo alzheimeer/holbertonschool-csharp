@@ -15,12 +15,7 @@ class Program
         for (int f = 0; f < 5; f++)
         {
             for (int c = 0; c < 5; c++)
-            {
-                if (c < 4)
-                    Console.Write(mat[f,c] + " ");
-                else
-                    Console.Write(mat[f,c]);
-            }
+                    Console.Write("{0}{1}", mat[f,c], c < 4 ? " ": "");
             Console.WriteLine();
         }
            
