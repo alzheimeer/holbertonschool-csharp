@@ -12,3 +12,4 @@ class Program
         Console.WriteLine(List.Sum(myList1));
         Console.WriteLine(List.Sum(myList2));
     }
+}
