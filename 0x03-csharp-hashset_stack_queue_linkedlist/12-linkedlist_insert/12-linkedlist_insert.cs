@@ -7,16 +7,23 @@ class LList
     {   
         //Create new node
         LinkedListNode<int> newnode = new LinkedListNode<int>(n);
-        LinkedListNode<int> a = myLList.First;
+        LinkedListNode<int> a;
+        a = myLList.First;
 
         while(a != null)
         {
             if(a.Value < n)
                 a = a.Next;
             else
-                return (myLList.AddBefore(a, n));
+            {
+                myLList.AddBefore(a, n);
+                return myLList.First;
+            }
             if(a.Next == null && a.Value < n)
-                return (myLList.AddLast(n));
+            {
+                myLList.AddLast(n);
+                return myLList.First;
+            }
         }
         return newnode;
     }
