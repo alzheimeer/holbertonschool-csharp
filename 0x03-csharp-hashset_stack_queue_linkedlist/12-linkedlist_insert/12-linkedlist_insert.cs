@@ -18,7 +18,7 @@ class LList
                 myLList.AddBefore(a, n);
                 return myLList.First;
             }
-            if(a.Next == null && a.Value < n)
+            if(a.Next == null)
             {
                 myLList.AddLast(n);
                 return myLList.First;
