@@ -18,7 +18,8 @@ This repository contains example projects using c# programming languages. In the
 0. [0x00. C# - Hello World](./0x00-csharp-hello_world) 04-13-2020
 1. [0x01. C# - if/else, Loops, Functions](./0x01-csharp-ifelse_loops_methods) 04-14-2020
 2. [0x02. C# - Data Structures: Arrays, Lists, Dictionaries](./0x02-csharp-arrays_lists_dictionaries) 04-16-2020
-
+3. [0x03. C# - Csharp-hashset_stack_queue_linkedlist](./0x03-csharp-hashset_stack_queue_linkedlist) 04-27-2020
+ 
 ## Author
 ### Edgar Quintero "Alzheimeer" 
 Email: <fogniebla@hotmail.com> Twitter: [@alzheimeer](https://twitter.com/alzheimeer) Linkedin: [alzheimeer](https://www.linkedin.com/in/alzheimeer)
