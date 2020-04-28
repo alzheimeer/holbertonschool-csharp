@@ -5,19 +5,18 @@ class LList
 {
     public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
-        LinkedListNode<int> act = myLList.First;
-        while(act != null)
+        LinkedListNode<int> current = myLList.First;
+        while(current != null)
         {
-            if(act.Value < n)
-            {
-                act = act.Next;
-            }
+            if(current.Value < n)
+                current = current.Next;
             else
             {
-                return(myLList.AddBefore(act, n));
-                //break;
+                myLList.AddBefore(current, n);
+                return myLList.First;
             }   
         }
-        return(myLList.AddLast(n));  
+        myLList.AddLast(n);
+        return myLList.First;  
     }
 }
