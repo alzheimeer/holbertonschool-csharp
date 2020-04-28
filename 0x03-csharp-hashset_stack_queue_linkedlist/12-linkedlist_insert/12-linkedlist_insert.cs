@@ -12,20 +12,17 @@ class LList
         while(a != null)
         {
             if(a.Value < n)
-            {
                 a = a.Next;
-                if(a.Next == null)
-                {
-                    myLList.AddLast(n);
-                    return myLList.First;
-                }
-            }
             else
             {
                 myLList.AddBefore(a, n);
                 return myLList.First;
             }
-            
+            if(a.Next == null && a.Value < n)
+            {
+                myLList.AddLast(n);
+                return myLList.First;
+            }
         }
         return newnode;
     }
