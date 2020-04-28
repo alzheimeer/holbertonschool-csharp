@@ -51,133 +51,133 @@ Quiz questions
 
 What are the characteristics of a `HashSet`?
 
-*   A `HashSet` represents a collection of values
+- [X]   A `HashSet` represents a collection of values
     
-*   A `HashSet` cannot contain duplicate elements
+- [X]   A `HashSet` cannot contain duplicate elements
     
-*   A `HashSet` is sorted
+- [ ]   A `HashSet` is sorted
     
-*   The number of values stored in a `HashSet` is fixed at its initialization
+- [ ]   The number of values stored in a `HashSet` is fixed at its initialization
     
 
 #### Question #1
 
 A `Stack` is:
 
-*   FIFO
+- [ ]   FIFO
     
-*   LIFO
+- [X]   LIFO
     
 
 #### Question #2
 
 An example of a `Stack` is:
 
-*   A line at a grocery store checkout
+- [ ]   A line at a grocery store checkout
     
-*   Back / Forward buttons on web browsers
+- [X]   Back / Forward buttons on web browsers
     
 
 #### Question #3
 
 A `Queue` is:
 
-*   FIFO
+- [X]   FIFO
     
-*   LIFO
+- [ ]   LIFO
     
 
 #### Question #4
 
 An example of a `Queue` is:
 
-*   A number of plates placed one on top of the other
+- [ ]   A number of plates placed one on top of the other
     
-*   A list of documents sent to a printer waiting to be printed
+- [X]   A list of documents sent to a printer waiting to be printed
     
 
 #### Question #5
 
 Which operation puts data on top of a `Stack`?
 
-*   `.Push()`
+- [X]   `.Push()`
     
-*   `.Pop()`
+- [ ]   `.Pop()`
     
-*   `.Peek()`
+- [ ]   `.Peek()`
     
 
 #### Question #6
 
 Which operation removes data from the top of a `Stack`?
 
-*   `.Push()`
+- [ ]   `.Push()`
     
-*   `.Pop()`
+- [X]   `.Pop()`
     
-*   `.Peek()`
+- [ ]   `.Peek()`
     
 
 #### Question #7
 
 What operation gets a copy of the data from the top of the `Stack`?
 
-*   `.Push()`
+- [ ]    `.Push()`
     
-*   `.Pop()`
+- [ ]    `.Pop()`
     
-*   `.Peek()`
+- [X]   `.Peek()`
     
 
 #### Question #8
 
 What operation puts new data at the end of a `Queue`?
 
-*   `.Peek()`
+- [ ]   `.Peek()`
     
-*   `.Enqueue()`
+- [X]   `.Enqueue()`
     
-*   `.Dequeue()`
+- [ ]    `.Dequeue()`
     
 
 #### Question #9
 
 What operation removes data from the beginning of the `Queue`?
 
-*   `.Peek()`
+- [ ]    `.Peek()`
     
-*   `.Enqueue()`
+- [ ]    `.Enqueue()`
     
-*   `.Dequeue()`
+- [X]    `.Dequeue()`
     
 
 #### Question #10
 
 What operation returns a copy of the data from the beginning of the `Queue`?
 
-*   `.Peek()`
+- [X]   `.Peek()`
     
-*   `.Enqueue()`
+- [ ]   `.Enqueue()`
     
-*   `.Dequeue()`
+- [ ]   `.Dequeue()`
     
 
 #### Question #11
 
 In C#, the `LinkedList<T>` class is:
 
-*   A singly linked list
+- [ ]   A singly linked list
     
-*   A doubly linked list
+- [X]   A doubly linked list
     
 
 #### Question #12
 
 A `LinkedList` node can be accessed directly by its index
 
-*   True
+- [ ]   True
     
-*   False
+- [X]   False
     
 
 
@@ -191,8 +191,8 @@ Write a method that adds all unique integers in a list.
 *   Class Name: List
 *   Prototype: `public static int Sum(List<int> myList)`
 *   Returns the sum of unique integers in given list
-
-    carrie@ubuntu:~/0x03/0-unique_add$ cat 0-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/0-unique_add$ cat 0-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -208,16 +208,17 @@ Write a method that adds all unique integers in a list.
             Console.WriteLine(List.Sum(myList2));
         }
     }
-    carrie@ubuntu:~/0x03/0-unique_add$ 
-    
+    alzheimeer@ubuntu:~/0x03/0-unique_add$ 
+```
+```    
 
-    carrie@ubuntu:~/0x03/0-unique_add$ ls
+    alzheimeer@ubuntu:~/0x03/0-unique_add$ ls
     0-main.cs  0-unique_add.cs  0-unique_add.csproj  bin  obj
-    carrie@ubuntu:~/0x03/0-unique_add$ dotnet run
+    alzheimeer@ubuntu:~/0x03/0-unique_add$ dotnet run
     36
     42
-    carrie@ubuntu:~/0x03/0-unique_add$ 
-    
+    alzheimeer@ubuntu:~/0x03/0-unique_add$ 
+```    
 
 **Repo:**
 
@@ -238,8 +239,8 @@ Write a method that returns a sorted list of common elements in two lists.
 *   Returns a new sorted list of common elements in two given lists
 *   You cannot use `LINQ`
 *   You cannot use `SortedList`
-
-    carrie@ubuntu:~/0x03/1-common_elements$ cat 1-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/1-common_elements$ cat 1-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -258,17 +259,17 @@ Write a method that returns a sorted list of common elements in two lists.
                 Console.WriteLine(i);
         }
     }
-    carrie@ubuntu:~/0x03/1-common_elements$ 
-    
-
-    carrie@ubuntu:~/0x03/1-common_elements$ ls
+    alzheimeer@ubuntu:~/0x03/1-common_elements$ 
+```   
+```
+    alzheimeer@ubuntu:~/0x03/1-common_elements$ ls
     1-common_elements.cs  1-common_elements.csproj  1-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/1-common_elements$ dotnet run
+    alzheimeer@ubuntu:~/0x03/1-common_elements$ dotnet run
     2
     4
     6
-    carrie@ubuntu:~/0x03/1-common_elements$ 
-    
+    alzheimeer@ubuntu:~/0x03/1-common_elements$ 
+```    
 
 **Repo:**
 
@@ -289,8 +290,8 @@ Write a method that returns a sorted list of all elements present in one or the 
 *   Returns a new sorted list of all elements present in one or the other list but not both of the given lists
 *   You cannot use `LINQ`
 *   You cannot use `SortedList`
-
-    carrie@ubuntu:~/0x03/2-different_elements$ cat 2-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/2-different_elements$ cat 2-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -309,20 +310,20 @@ Write a method that returns a sorted list of all elements present in one or the 
                 Console.WriteLine(i);
         }
     }
-    carrie@ubuntu:~/0x03/2-different_elements$ 
-    
-
-    carrie@ubuntu:~/0x03/2-different_elements$ ls
+    alzheimeer@ubuntu:~/0x03/2-different_elements$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/2-different_elements$ ls
     2-different_elements.cs  2-different_elements.csproj  2-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/2-different_elements$ dotnet run
+    alzheimeer@ubuntu:~/0x03/2-different_elements$ dotnet run
     0
     1
     3
     5
     7
     8
-    carrie@ubuntu:~/0x03/2-different_elements$ 
-    
+    alzheimeer@ubuntu:~/0x03/2-different_elements$ 
+```    
 
 **Repo:**
 
@@ -351,8 +352,8 @@ Given a `Stack<string>`, write a program that does the following:
     *   You can use `.Pop()` only once
 *   Add a new given item `newItem` to `aStack`
 *   Return `aStack`
-
-    carrie@ubuntu:~/0x03/3-stack_push_pop$ cat 3-main.cs
+```
+    alzheimeer@ubuntu:~/0x03/3-stack_push_pop$ cat 3-main.cs
     using System;
     using System.Collections.Generic;
     
@@ -383,12 +384,12 @@ Given a `Stack<string>`, write a program that does the following:
                 Console.WriteLine(item);
         }
     }
-    carrie@ubuntu:~/0x03/3-stack_push_pop$ 
-    
-
-    carrie@ubuntu:~/0x03/3-stack_push_pop$ ls
+    alzheimeer@ubuntu:~/0x03/3-stack_push_pop$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/3-stack_push_pop$ ls
     3-main.cs  3-stack_push_pop.cs  3-stack_push_pop.csproj  bin  obj
-    carrie@ubuntu:~/0x03/3-stack_push_pop$ dotnet run
+    alzheimeer@ubuntu:~/0x03/3-stack_push_pop$ dotnet run
     Ruby
     React
     Python
@@ -403,8 +404,8 @@ Given a `Stack<string>`, write a program that does the following:
     C#
     HTML
     C
-    carrie@ubuntu:~/0x03/3-stack_push_pop$ 
-    
+    alzheimeer@ubuntu:~/0x03/3-stack_push_pop$ 
+```    
 
 **Repo:**
 
@@ -433,8 +434,8 @@ Given a `Queue<string>`, write a program that does the following:
 *   If `aQueue` contains the given item `search`, remove all items up to and including `search`; otherwise, leave `aQueue` as is
     *   You can use `.Dequeue()` only once
 *   Return `aQueue`
-
-    carrie@ubuntu:~/0x03/4-queue_enqueue_dequeue$ cat 4-main.cs
+```
+    alzheimeer@ubuntu:~/0x03/4-queue_enqueue_dequeue$ cat 4-main.cs
     using System;
     using System.Collections.Generic;
     
@@ -465,12 +466,12 @@ Given a `Queue<string>`, write a program that does the following:
                 Console.WriteLine(item);
         }
     }
-    carrie@ubuntu:~/0x03/4-queue_enqueue_dequeue$
-    
-
-    carrie@ubuntu:~/0x03/4-queue_enqueue_dequeue$ ls
+    alzheimeer@ubuntu:~/0x03/4-queue_enqueue_dequeue$
+```    
+```
+    alzheimeer@ubuntu:~/0x03/4-queue_enqueue_dequeue$ ls
     4-main.cs  4-queue_enqueue_dequeue.cs  4-queue_enqueue_dequeue.csproj  bin  obj
-    carrie@ubuntu:~/0x03/4-queue_enqueue_dequeue$ dotnet run
+    alzheimeer@ubuntu:~/0x03/4-queue_enqueue_dequeue$ dotnet run
     C
     HTML
     Javascript
@@ -486,9 +487,9 @@ Given a `Queue<string>`, write a program that does the following:
     React
     Ruby
     C#
-    carrie@ubuntu:~/0x03/4-queue_enqueue_dequeue$ 
+    alzheimeer@ubuntu:~/0x03/4-queue_enqueue_dequeue$ 
     
-
+```
 **Repo:**
 
 *   GitHub repository: `holbertonschool-csharp`
@@ -506,8 +507,8 @@ Write a method that creates and prints a LinkedList of integers of a given size.
 *   Prototype: `public static LinkedList<int> CreatePrint(int size)`
 *   Returns the newly created list
 *   If `size` is negative, return an empty list
-
-    carrie@ubuntu:~/0x03/5-print_linkedlist$ cat 5-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/5-print_linkedlist$ cat 5-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -526,12 +527,12 @@ Write a method that creates and prints a LinkedList of integers of a given size.
             Console.WriteLine("Linked List Length: " + llist.Count);
         }
     }
-    carrie@ubuntu:~/0x03/5-print_linkedlist$ 
-    
-
-    carrie@ubuntu:~/0x03/5-print_linkedlist$ ls
+    alzheimeer@ubuntu:~/0x03/5-print_linkedlist$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/5-print_linkedlist$ ls
     5-main.cs  5-print_linkedlist.cs  5-print_linkedlist.csproj  bin  obj
-    carrie@ubuntu:~/0x03/5-print_linkedlist$ dotnet run
+    alzheimeer@ubuntu:~/0x03/5-print_linkedlist$ dotnet run
     0
     1
     2
@@ -542,8 +543,8 @@ Write a method that creates and prints a LinkedList of integers of a given size.
     7
     -------------
     Linked List Length: 8
-    carrie@ubuntu:~/0x03/5-print_linkedlist$ 
-    
+    alzheimeer@ubuntu:~/0x03/5-print_linkedlist$ 
+```    
 
 **Repo:**
 
@@ -563,8 +564,8 @@ Write a method that returns the number of elements in a LinkedList.
 *   Prototype: `public static int Length(LinkedList<int> myLList)`
 *   Returns the number of elements in a given LinkedList
 *   You are not allowed to use `.Count()`
-
-    carrie@ubuntu:~/0x03/6-linkedlist_length$ cat 6-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/6-linkedlist_length$ cat 6-main.cs 
     using System;
     using System.Collections.Generic;
     class Program
@@ -584,15 +585,15 @@ Write a method that returns the number of elements in a LinkedList.
             Console.WriteLine(LList.Length(myLList));
         }
     }
-    carrie@ubuntu:~/0x03/6-linkedlist_length$
-    
-
-    carrie@ubuntu:~/0x03/6-linkedlist_length$ ls
+    alzheimeer@ubuntu:~/0x03/6-linkedlist_length$
+```    
+```
+    alzheimeer@ubuntu:~/0x03/6-linkedlist_length$ ls
     6-linkedlist_length.cs  6-linkedlist_length.csproj  6-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/6-linkedlist_length$ dotnet run
+    alzheimeer@ubuntu:~/0x03/6-linkedlist_length$ dotnet run
     6
-    carrie@ubuntu:~/0x03/6-linkedlist_length$ 
-    
+    alzheimeer@ubuntu:~/0x03/6-linkedlist_length$ 
+```    
 
 **Repo:**
 
@@ -610,8 +611,8 @@ Write a method that adds a node to the beginning of a LinkedList.
 *   Class Name: `LList`
 *   Prototype: `public static LinkedListNode<int> Add(LinkedList<int> myLList, int n)`
 *   Returns the newly added node
-
-    carrie@ubuntu:~/0x03/7-linkedlist_add$ cat 7-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/7-linkedlist_add$ cat 7-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -638,16 +639,16 @@ Write a method that adds a node to the beginning of a LinkedList.
             Console.WriteLine();
         }
     }
-    carrie@ubuntu:~/0x03/7-linkedlist_add$ 
-    
-
-    carrie@ubuntu:~/0x03/7-linkedlist_add$ ls
+    alzheimeer@ubuntu:~/0x03/7-linkedlist_add$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/7-linkedlist_add$ ls
     7-linkedlist_add.cs  7-linkedlist_add.csproj  7-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/7-linkedlist_add$ dotnet run
+    alzheimeer@ubuntu:~/0x03/7-linkedlist_add$ dotnet run
     1 2 3 4 5 
     0 1 2 3 4 5 
-    carrie@ubuntu:~/0x03/7-linkedlist_add$ 
-    
+    alzheimeer@ubuntu:~/0x03/7-linkedlist_add$ 
+ ```   
 
 **Repo:**
 
@@ -667,8 +668,8 @@ Write a method that finds a value in a LinkedList and returns its index position
 *   Prototype: `public static int FindNode(LinkedList<int> myLList, int value)`
 *   Returns the index position of the first occurrence of the value given or `-1` if the value is not in the list
 *   You are not allowed to use `.Find()` or `FindLast()`
-
-    carrie@ubuntu:~/0x03/8-linkedlist_find$ cat 8-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/8-linkedlist_find$ cat 8-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -692,17 +693,17 @@ Write a method that finds a value in a LinkedList and returns its index position
             Console.WriteLine("Node Position: " + LList.FindNode(myLList, -10));
         }
     }
-    carrie@ubuntu:~/0x03/8-linkedlist_find$ 
-    
-
-    carrie@ubuntu:~/0x03/8-linkedlist_find$ ls
+    alzheimeer@ubuntu:~/0x03/8-linkedlist_find$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/8-linkedlist_find$ ls
     8-linkedlist_find.cs  8-linkedlist_find.csproj  8-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/8-linkedlist_find$ dotnet run
+    alzheimeer@ubuntu:~/0x03/8-linkedlist_find$ dotnet run
     Node Position: 3
     Node Position: 0
     Node Position: -1
-    carrie@ubuntu:~/0x03/8-linkedlist_find$ 
-    
+    alzheimeer@ubuntu:~/0x03/8-linkedlist_find$ 
+```    
 
 **Repo:**
 
@@ -722,8 +723,8 @@ Write a method that deletes the head node of a LinkedList and returns that nodeâ
 *   Prototype: `public static int Pop(LinkedList<int> myLList)`
 *   Returns the value of the head node
 *   If the list is empty, return `0`
-
-    carrie@ubuntu:~/0x03/9-linkedlist_pop$ cat 9-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/9-linkedlist_pop$ cat 9-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -744,15 +745,15 @@ Write a method that deletes the head node of a LinkedList and returns that nodeâ
             Console.WriteLine(LList.Pop(myLList));
         }
     }
-    carrie@ubuntu:~/0x03/9-linkedlist_pop$ 
-    
-
-    carrie@ubuntu:~/0x03/9-linkedlist_pop$ ls
+    alzheimeer@ubuntu:~/0x03/9-linkedlist_pop$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/9-linkedlist_pop$ ls
     9-linkedlist_pop.cs  9-linkedlist_pop.csproj  9-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/9-linkedlist_pop$ dotnet run
+    alzheimeer@ubuntu:~/0x03/9-linkedlist_pop$ dotnet run
     11
-    carrie@ubuntu:~/0x03/9-linkedlist_pop$ 
-    
+    alzheimeer@ubuntu:~/0x03/9-linkedlist_pop$ 
+```    
 
 **Repo:**
 
@@ -773,8 +774,8 @@ Write a method that returns the value of the nth node of a LinkedList.
 *   Returns the value of the node at the given index
 *   If the node doesnâ€™t exist, return `0`
 *   Indexing starts at 0
-
-    carrie@ubuntu:~/0x03/10-linkedlist_get_node$ cat 10-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/10-linkedlist_get_node$ cat 10-main.cs 
     using System;
     using System.Collections.Generic;
     class Program
@@ -796,16 +797,16 @@ Write a method that returns the value of the nth node of a LinkedList.
             Console.WriteLine(LList.GetNode(myLList, 5));
         }
     }
-    carrie@ubuntu:~/0x03/10-linkedlist_get_node$ 
-    
-
-    carrie@ubuntu:~/0x03/10-linkedlist_get_node$ ls
+    alzheimeer@ubuntu:~/0x03/10-linkedlist_get_node$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/10-linkedlist_get_node$ ls
     10-linkedlist_get_node.cs  10-linkedlist_get_node.csproj  10-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/10-linkedlist_get_node$ dotnet run
+    alzheimeer@ubuntu:~/0x03/10-linkedlist_get_node$ dotnet run
     66
-    carrie@ubuntu:~/0x03/10-linkedlist_get_node$ 
+    alzheimeer@ubuntu:~/0x03/10-linkedlist_get_node$ 
     
-
+```
 **Repo:**
 
 *   GitHub repository: `holbertonschool-csharp`
@@ -822,8 +823,8 @@ Write a method that returns the sum of all the data of a LinkedList.
 *   Class Name: `LList`
 *   Prototype: `public static int Sum(LinkedList<int> myLList)`
 *   Returns the sum of the data in the LinkedList
-
-    carrie@ubuntu:~/0x03/11-linkedlist_sum$ cat 11-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/11-linkedlist_sum$ cat 11-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -845,15 +846,15 @@ Write a method that returns the sum of all the data of a LinkedList.
             Console.WriteLine(LList.Sum(myLList));
         }
     }
-    carrie@ubuntu:~/0x03/11-linkedlist_sum$ 
-    
-
-    carrie@ubuntu:~/0x03/11-linkedlist_sum$ ls
+    alzheimeer@ubuntu:~/0x03/11-linkedlist_sum$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/11-linkedlist_sum$ ls
     11-linkedlist_sum.cs  11-linkedlist_sum.csproj  11-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/11-linkedlist_sum$ dotnet run
+    alzheimeer@ubuntu:~/0x03/11-linkedlist_sum$ dotnet run
     98
-    carrie@ubuntu:~/0x03/11-linkedlist_sum$ 
-    
+    alzheimeer@ubuntu:~/0x03/11-linkedlist_sum$ 
+```    
 
 **Repo:**
 
@@ -872,8 +873,8 @@ Write a method that inserts a new node in the correct position in an ordered Lin
 *   Class Name: `LList`
 *   Prototype: `public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)`
 *   Returns the newly created node
-
-    carrie@ubuntu:~/0x03/12-linkedlist_insert$ cat 12-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/12-linkedlist_insert$ cat 12-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -911,12 +912,12 @@ Write a method that inserts a new node in the correct position in an ordered Lin
             }
         }
     }
-    carrie@ubuntu:~/0x03/12-linkedlist_insert$ 
-    
-
-    carrie@ubuntu:~/0x03/12-linkedlist_insert$ ls
+    alzheimeer@ubuntu:~/0x03/12-linkedlist_insert$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/12-linkedlist_insert$ ls
     12-linkedlist_insert.cs  12-linkedlist_insert.csproj  12-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/12-linkedlist_insert$ dotnet run
+    alzheimeer@ubuntu:~/0x03/12-linkedlist_insert$ dotnet run
     1
     4
     9
@@ -933,8 +934,8 @@ Write a method that inserts a new node in the correct position in an ordered Lin
     25
     36
     49
-    carrie@ubuntu:~/0x03/12-linkedlist_insert$ 
-    
+    alzheimeer@ubuntu:~/0x03/12-linkedlist_insert$ 
+```    
 
 **Repo:**
 
@@ -951,8 +952,8 @@ Write a method that deletes the node at given position in a LinkedList.
 
 *   Class Name: `LList`
 *   Prototype: `public static void Delete(LinkedList<int> myLList, int index)`
-
-    carrie@ubuntu:~/0x03/13-linkedlist_delete$ cat 13-main.cs 
+```
+    alzheimeer@ubuntu:~/0x03/13-linkedlist_delete$ cat 13-main.cs 
     using System;
     using System.Collections.Generic;
     
@@ -990,12 +991,12 @@ Write a method that deletes the node at given position in a LinkedList.
             }
         }
     }
-    carrie@ubuntu:~/0x03/13-linkedlist_delete$ 
-    
-
-    carrie@ubuntu:~/0x03/13-linkedlist_delete$ ls
+    alzheimeer@ubuntu:~/0x03/13-linkedlist_delete$ 
+```    
+```
+    alzheimeer@ubuntu:~/0x03/13-linkedlist_delete$ ls
     13-linkedlist_delete.cs  13-linkedlist_delete.csproj  13-main.cs  bin  obj
-    carrie@ubuntu:~/0x03/13-linkedlist_delete$ dotnet run
+    alzheimeer@ubuntu:~/0x03/13-linkedlist_delete$ dotnet run
     1
     4
     9
@@ -1010,8 +1011,8 @@ Write a method that deletes the node at given position in a LinkedList.
     16
     25
     49
-    carrie@ubuntu:~/0x03/13-linkedlist_delete$ 
-    
+    alzheimeer@ubuntu:~/0x03/13-linkedlist_delete$ 
+ ```   
 
 **Repo:**
 
