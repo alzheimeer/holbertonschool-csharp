@@ -7,6 +7,6 @@ class LList
     {
         myLList.AddFirst(n);
 
-        return myLList.AddFirst;
+        return myLList.First;
     }
 }
