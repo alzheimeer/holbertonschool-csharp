@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace _4_throw_exception_msg
+class Except
 {
-    class Program
+    public static void ThrowMsg(string msg)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        throw new Exception("C is fun");
     }
 }
