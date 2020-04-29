@@ -17,7 +17,7 @@ struct Dog
 
         public override string ToString()
         {
-            return "Dog Name: " + name + "Age: " + age + "Owner: " + owner + "Rating: " + rating;
+            return String.Format("Dog Name: {0} \nAge: {1} \nOwner: {2} \nRating: {3}",name,age,owner,rating);
         }
     }
 
