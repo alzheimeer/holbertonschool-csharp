@@ -27,8 +27,12 @@ Resources
 *   How to document C# code with XML comments
 *   What is object-oriented programming?
 *   What is a namespace
+- RTA: In C # Namespaces are made up of a set of related objects like classes, delegates, structures, interfaces
 *   What is a class
+- RTA: CLASSES are the symbolic representation of OBJECTS. CLASSES describe fields, properties, methods and events.
 *   What are objects and instances
+- RTA: Creating an OBJECT from a class is what is called INSTANCE.
+     
 *   What is the difference between a class and an object or instance
 *   What is a field
 *   What is a constructor
@@ -41,7 +45,11 @@ Resources
 *   What is a static class
 *   What is a static member
 *   What is encapsulation
+- RTA: ENCAPSULATION: Groups data and codes in a single class.
 *   What is polymorphism
+- RTA: Thanks to this property, different classes can be used interchangeably. Other concepts associated with polymorphism are OVERLOAD, OVERWRITING and HIDING.
+*   What is inherytance
+- RTA: Allows the creation of a new class from an existing one, from which everything is inherited and can be customized by adding or modifying inherited properties and methods. Classes created from existing classes are called DERIVED CLASSES.
 *   What is abstraction
 *   What does `toString` do and how to override it
 *   What is the difference between a class and a struct
