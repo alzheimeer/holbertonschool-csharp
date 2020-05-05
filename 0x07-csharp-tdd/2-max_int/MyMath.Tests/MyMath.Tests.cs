@@ -19,7 +19,7 @@ namespace MyMath.Tests
         }
 
         [Test]
-        public void Empty()
+        public void xempty()
         {
             List<int> nums = new List<int>();
 
@@ -28,7 +28,7 @@ namespace MyMath.Tests
         }
 
         [Test]
-        public void Null()
+        public void xnull()
         {
             List<int> nums = null;
 

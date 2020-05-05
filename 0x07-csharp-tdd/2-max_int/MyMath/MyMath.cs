@@ -11,10 +11,9 @@ namespace MyMath
         /// <returns>max integer in list, If nums is empty, return 0</returns>
         public static int Max(List<int> nums)
         {
-            int max = nums[0];
-
-            if (nums == null)
+            if (nums == null || nums.Count <= 0)
                 return 0;
+            int max = nums[0];
             foreach(int i in nums)
                 if (i > max)
                     max = i;
