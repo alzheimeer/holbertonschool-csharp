@@ -1,8 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MyMath
 {
-    public class Class1
+    ///<summary>method that returns the max integer in a list of integers</summary>
+    public class Operations
     {
+        /// <summary>Max integer</summary>
+        /// <param name="nums">list</param>
+        /// <returns>max integer in list, If nums is empty, return 0</returns>
+        public static int Max(List<int> nums)
+        {
+            int max = nums[0];
+
+            if (nums == null)
+                return 0;
+            foreach(int i in nums)
+                if (i > max)
+                    max = i;
+            return max;
+        }
     }
 }
