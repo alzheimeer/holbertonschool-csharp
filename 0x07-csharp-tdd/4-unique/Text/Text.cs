@@ -10,6 +10,8 @@ namespace Text
         /// <returns> index of first non-repeating character or -1 if there is no non-repeating</returns>
         public static int UniqueChar(string s)
         {
+            if (s == null)
+                return -1;
             s = s.ToLower();
             char[] arr = s.ToCharArray();
             int c;

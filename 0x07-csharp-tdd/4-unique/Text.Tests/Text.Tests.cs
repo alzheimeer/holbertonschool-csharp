@@ -34,5 +34,23 @@ namespace Text.Tests
 
             Assert.AreEqual(0, result);
         }
+        [Test]
+        public void xnone()
+        {
+            string s = "ddggttrrffttffddgg";
+            
+            int result = Str.UniqueChar(s);
+
+            Assert.AreEqual(-1, result);
+        }
+        [Test]
+        public void xnull()
+        {
+            string s = null;
+            
+            int result = Str.UniqueChar(s);
+
+            Assert.AreEqual(-1, result);
+        }
     }
 }
