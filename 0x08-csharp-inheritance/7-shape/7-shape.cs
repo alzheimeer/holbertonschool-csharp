@@ -1,12 +1,64 @@
 ﻿using System;
 
-namespace _7_shape
+///<summary>class Shape</summary>
+class Shape
 {
-    class Program
+    ///<summary>Throws an NotImplementedException</summary>
+    public virtual int Area()
     {
-        static void Main(string[] args)
+       throw new NotImplementedException("Area() is not implemented");
+    }
+}
+
+class Rectangle : Shape
+{
+    private int width;
+    private int height;
+
+    ///<summary> public property Width / get: retrieve width / set: set width or exception</summary>
+    public int Width
+    {
+        get
         {
-            Console.WriteLine("Hello World!");
+            return width;
+        }
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Width must be greater than or equal to 0");
+            }
+            width = value;
         }
     }
+
+    /// <summary> public property Height / get: retrieve height / set: set height or exception</summary>
+    public int Height
+    {
+        get
+        {
+            return height;
+        }
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Height must be greater than or equal to 0");
+            }
+            height = value;
+        }
+    }
+
+    /// <summary> public override Area </summary>
+    public override int Area()
+    {
+        return height*width;
+    }
+    /// <summary> public property ToString()</summary>
+    public override string ToString()
+    {
+        return string.Format("[Rectangle] {0} / {1}", width, height);
+    }
+
+
 }
