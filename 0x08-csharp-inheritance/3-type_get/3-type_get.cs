@@ -24,7 +24,7 @@ class Obj
         //PropertyInfo[] pList = t.GetProperties();
         //MethodInfo[] mList = t.GetMethods();
         
-        StringBuilder sb = new StringBuilder();
+        //StringBuilder sb = new StringBuilder();
            
         System.Console.WriteLine("{0} Properties:", t.Name);
         foreach (PropertyInfo p in pList)

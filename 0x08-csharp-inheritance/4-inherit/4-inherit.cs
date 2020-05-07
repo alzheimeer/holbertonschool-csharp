@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _4_inherit
+///<summary>class dog</summary>
+class Dog:Animal
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+
+}
+
+///<summary>class Animal</summary>
+class Animal
+{
+    
+
 }
