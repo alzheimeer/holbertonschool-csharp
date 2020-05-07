@@ -1,12 +1,36 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Globalization;
+using System.Text;
 
-namespace _3_type_get
+
+class Obj
 {
-    class Program
+    ///<summary>prints the names of the available properties and methods of an object</summary>
+    public static void Print(object myObj)
     {
-        static void Main(string[] args)
+        Type tt = myObj.GetType();
+        TypeInfo t = tt.GetTypeInfo();
+        IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
+        IEnumerable<MethodInfo> mList = t.DeclaredMethods;
+
+        StringBuilder sb = new StringBuilder();
+           
+        sb.Append( tt.Name +" Properties:");
+        foreach (PropertyInfo p in pList)
         {
-            Console.WriteLine("Hello World!");
+            sb.Append("\n" + p.Name);
         }
+        sb.Append("\n"+ tt.Name +" Methods:");
+        foreach (MethodInfo m in mList)
+        {
+            sb.Append("\n" + m.Name);
+        }
+            
+        Console.WriteLine(sb.ToString());
+
+       
     }
 }
