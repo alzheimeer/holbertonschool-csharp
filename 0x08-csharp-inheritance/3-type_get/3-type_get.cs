@@ -1,14 +1,16 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Globalization;
 using System.Text;
 
-
+/// <summary>class</summary>
 class Obj
 {
     ///<summary>prints the names of the available properties and methods of an object</summary>
+    /// <returns> not </returns>
     public static void Print(object myObj)
     {
         Type tt = myObj.GetType();
@@ -18,15 +20,15 @@ class Obj
 
         StringBuilder sb = new StringBuilder();
            
-        sb.Append( tt.Name +" Properties:");
+        sb.Append(t.Name +" Properties:"+"\n");
         foreach (PropertyInfo p in pList)
         {
-            sb.Append("\n" + p.Name);
+            sb.Append(p.Name+"\n");
         }
-        sb.Append("\n"+ tt.Name +" Methods:");
+        sb.Append(t.Name +" Methods:"+"\n");
         foreach (MethodInfo m in mList)
         {
-            sb.Append("\n" + m.Name);
+            sb.Append(m.Name+"\n");
         }
             
         Console.WriteLine(sb.ToString());
