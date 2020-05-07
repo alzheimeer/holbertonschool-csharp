@@ -17,22 +17,26 @@ class Obj
         TypeInfo t = tt.GetTypeInfo();
         IEnumerable<PropertyInfo> pList = t.GetProperties();
         IEnumerable<MethodInfo> mList = t.GetMethods();
+
+        //IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
+        //IEnumerable<MethodInfo> mList = t.DeclaredMethods;
+        
         //PropertyInfo[] pList = t.GetProperties();
         //MethodInfo[] mList = t.GetMethods();
+        
         StringBuilder sb = new StringBuilder();
            
-        sb.Append(t.Name +" Properties:"+"\n");
+        System.Console.WriteLine("{0} Properties:", t.Name);
         foreach (PropertyInfo p in pList)
         {
-            sb.Append(p.Name+"\n");
+            System.Console.WriteLine(p.Name);
         }
-        sb.Append(t.Name +" Methods:"+"\n");
+        
+        System.Console.WriteLine("{0} Methods:", t.Name);
         foreach (MethodInfo m in mList)
         {
-            sb.Append(m.Name+"\n");
+            System.Console.WriteLine(m.Name);
         }
-            
-        Console.WriteLine(sb.ToString());
 
        
     }
