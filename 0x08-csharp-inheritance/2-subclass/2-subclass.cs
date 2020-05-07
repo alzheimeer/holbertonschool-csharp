@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace _2_subclass
+class Obj
 {
-    class Program
+    ///<summary>True if the object is an instance of a class that inherits from the specified class, otherwise return False</summary>
+    public static bool IsOnlyASubclass(Type derivedType, Type baseType)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        return (derivedType.IsSubclassOf(baseType));
     }
 }
