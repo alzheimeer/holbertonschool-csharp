@@ -15,9 +15,10 @@ class Obj
     {
         Type tt = myObj.GetType();
         TypeInfo t = tt.GetTypeInfo();
-        IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
-        IEnumerable<MethodInfo> mList = t.DeclaredMethods;
-
+        IEnumerable<PropertyInfo> pList = t.GetProperties();
+        IEnumerable<MethodInfo> mList = t.GetMethods();
+        //PropertyInfo[] pList = t.GetProperties();
+        //MethodInfo[] mList = t.GetMethods();
         StringBuilder sb = new StringBuilder();
            
         sb.Append(t.Name +" Properties:"+"\n");
