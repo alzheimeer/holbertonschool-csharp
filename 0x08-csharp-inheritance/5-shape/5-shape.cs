@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _5_shape
+///<summary>class Shape</summary>
+class Shape
 {
-    class Program
+    ///<summary>Throws an NotImplementedException</summary>
+    public virtual int Area()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+       throw new NotImplementedException("Area() is not implemented");
     }
 }
