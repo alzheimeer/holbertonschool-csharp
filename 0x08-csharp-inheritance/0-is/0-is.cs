@@ -1,12 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace _0_is
+class Obj
 {
-    class Program
+    public static bool IsOfTypeInt(object obj)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        return (obj is int);
     }
 }
