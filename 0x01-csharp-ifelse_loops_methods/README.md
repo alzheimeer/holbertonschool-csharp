@@ -51,7 +51,7 @@ What format string displays `9876.678` as `9876.68`?
     
 - [ ]   `N2`
     
-- [ ]   `F2`
+- [X]   `F2`
     
 - [ ]   `E2`
     
@@ -60,7 +60,7 @@ What format string displays `9876.678` as `9876.68`?
 
 What format string displays `9876.678` as `9,876.68`?
 
-- [ ]   `N2`
+- [X]   `N2`
     
 - [ ]   `F2`
     
@@ -79,7 +79,7 @@ What format string displays `255` as `FF`
     
 - [ ]   `D`
     
-- [ ]   `X`
+- [X]   `X`
     
 
 #### Question #3
@@ -92,7 +92,7 @@ What format string displays `.753` as `75.30%`?
     
 - [ ]   `P1`
     
-- [ ]   `P2`
+- [X]   `P2`
     
 
 #### Question #4
@@ -101,7 +101,7 @@ What format string displays `.753` as `75%`?
 
 - [ ]   `P`
     
-- [ ]   `P0`
+- [X]   `P0`
     
 - [ ]   `P1`
     
@@ -112,13 +112,13 @@ What format string displays `.753` as `75%`?
 
 What format string displays `8.2` as `$8.20`?
 
-- [ ]   `C`
+- [X]   `C`
     
 - [ ]   `C0`
     
 - [ ]   `C1`
     
-- [ ]   `C2`
+- [X]   `C2`
     
 
 #### Question #6
@@ -139,7 +139,7 @@ What does this code display?
     }
     
 
-- [ ]   Holberton
+- [X]   Holberton
     
 - [ ]   School
     
@@ -162,7 +162,7 @@ What does this code display?
     }
     
 
-- [ ]   Even
+- [X]   Even
     
 - [ ]   Odd
     
@@ -191,7 +191,7 @@ What does this code display?
     
 - [ ]   Mission
     
-- [ ]   Street
+- [X]   Street
     
 
 #### Question #9
@@ -212,22 +212,12 @@ What does this code display?
 
 - [ ]   1234
     
-- [ ]   0123
+- [X]   0123
     
 - [ ]   1 2 3 4
     
 - [ ]   0 1 2 3
     
-
-* * *
-
-Tasks
------
-
-Done?!  
-Help
-
-×
 
 #### Students who are done with "0. Positive anything is better than negative nothing"
 
