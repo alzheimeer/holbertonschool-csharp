@@ -229,7 +229,7 @@ Tasks
 
 #### [0. Initialize new project](./0-initialize_new_project.sh)
 
-Score: 0% (Checks completed: 0%)
+
 
 Write a Bash script that initializes a new C# project inside a folder titled `0-new_project`.
 
@@ -269,12 +269,10 @@ Write a Bash script that initializes a new C# project inside a folder titled `0-
 
 #### [1. Build new project ](./1-build_new_project.sh)
 
-Score: 0% (Checks completed: 0%)
-
 Write a Bash script that initializes and builds a new C# project inside a folder titled `1-new_project`.
 
 *   Use the command `dotnet`
-
+```
     carrie@ubuntu:~/0x00-csharp-hello_world$ ls
     1-build_new_project.sh
     carrie@ubuntu:~/0x00-csharp-hello_world$ ./1-build_new_project.sh 
@@ -306,7 +304,7 @@ Write a Bash script that initializes and builds a new C# project inside a folder
     1-new_project.csproj  bin  obj  Program.cs
     carrie@ubuntu:~/0x00-csharp-hello_world$ 
     
-
+```
 **Repo:**
 
 *   GitHub repository: `holbertonschool-csharp`
@@ -319,7 +317,6 @@ Write a Bash script that initializes and builds a new C# project inside a folder
 
 #### [2. Run new project](./2-run_new_project.sh)
 
-Score: 0% (Checks completed: 0%)
 
 Write a Bash script that initializes, builds, and runs a new C# project from a folder titled `2-new_project`.
 
@@ -369,7 +366,7 @@ Write a Bash script that initializes, builds, and runs a new C# project from a f
 
 #### [3. Hello, WriteLine ](./3-writeline)
 
-Score: 0% (Checks completed: 0%)
+
 
 Write a C# script that prints exactly `"Programming is like building a multilingual puzzle` followed by a new line.
 
@@ -393,11 +390,23 @@ Write a C# script that prints exactly `"Programming is like building a multiling
 
 #### [4. Print integer](./4-print_integer)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/euxMhFdEF0-XZCLtdqne4Q "source code") in order to print the integer stored in the variable `number`, followed by `Mission Street` followed by a new line.
 
-*   You can find the source code [here](/rltoken/euxMhFdEF0-XZCLtdqne4Q "here")
+Complete this 
+```
+using System;
+
+class Program
+{
+	static void Main(string[] args)
+	{
+		int number = 972;
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+	}
+}
+```
+in order to print the integer stored in the variable `number`, followed by `Mission Street` followed by a new line.
+
 *   Your code should be exactly 10 lines long
 *   The output of the script should be:
     *   the number, followed by `Mission Street`
@@ -422,11 +431,22 @@ Complete this [source code](/rltoken/euxMhFdEF0-XZCLtdqne4Q "source code") in or
 
 #### [5. Print float](./5-print_float)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/kuytn76s-qptXICqj2Vmmg "source code") in order to print the float stored in the variable `number` with a precision of 2 digits.
 
-*   You can find the source code [here](/rltoken/kuytn76s-qptXICqj2Vmmg "here")
+Complete this
+```using System;
+
+class Program
+{
+	static void Main(string[] args)
+        {
+		float number = 3.14159f;
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+        }
+}
+```
+in order to print the float stored in the variable `number` with a precision of 2 digits.
+
 *   Your script should be exactly 10 lines long
 *   The output of the script should be:
     *   `Float:` followed by the number with only 2 digits
@@ -451,11 +471,23 @@ Complete this [source code](/rltoken/kuytn76s-qptXICqj2Vmmg "source code") in or
 
 #### [6. Print string](./6-print_string)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/BsLlMCzRgrGoeGqCGX3LWw "source code") in order to print a string stored in the variable `str` 3 times, followed by its first 9 characters.
 
-*   You can find the source code [here](/rltoken/BsLlMCzRgrGoeGqCGX3LWw "here")
+Complete this
+```
+using System;
+
+class Program
+{
+	static void Main(string[] args)
+	{
+		string str = "Holberton School";
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+        }
+}
+```
+in order to print a string stored in the variable `str` 3 times, followed by its first 9 characters.
+
 *   The output of the script should be:
     *   the value of `str` 3 times
     *   followed by a new line
@@ -483,11 +515,25 @@ Complete this [source code](/rltoken/BsLlMCzRgrGoeGqCGX3LWw "source code") in or
 
 #### [7. Play with strings ](./7-concat)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/legokuhnEkmHGP5-JkQV9w "source code") to print `Welcome to Holberton School!`
 
-*   You can find the source code [here](/rltoken/legokuhnEkmHGP5-JkQV9w "here")
+Complete this
+```
+using System;
+
+class Program
+{
+	static void Main(string[] args)
+	{
+		string str1 = "Holberton";
+		string str2 = "School";
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+		Console.WriteLine("Welcome to {0}!", str1);
+	}
+}
+```
+to print `Welcome to Holberton School!`
+
 *   Your code should be exactly 12 lines long
 *   You are not allowed to use any loops or conditional statement
 *   You have to use the variables `str1` and `str2` in your new line of code
@@ -511,11 +557,25 @@ Complete this [source code](/rltoken/legokuhnEkmHGP5-JkQV9w "source code") to pr
 
 #### [8. Print variables](./8-print_variables)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/c5U7giCio60Do2H4XU5YMg "source code") in order to print the given variables as `972 Mission Street`.
 
-*   You can find the source code [here](/rltoken/c5U7giCio60Do2H4XU5YMg "here")
+Complete this
+```
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string str1 = "Street";
+        string str2 = "Mission";
+        int int1 = 972;
+        // YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+    }
+}
+```
+in order to print the given variables as `972 Mission Street`.
+
 *   Your code should be exactly 12 lines long
 *   You are not allowed to create new variables
 *   You are not allowed to edit existing variables
@@ -542,16 +602,29 @@ Complete this [source code](/rltoken/c5U7giCio60Do2H4XU5YMg "source code") in or
 
 #### [9. Print specifiers ](./9-print_specifiers)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/foEqLuZu644GyfX37MNTSw "source code") in order to print the given variables as in the result shown.
 
-*   You can find the source code [here](/rltoken/foEqLuZu644GyfX37MNTSw "here")
+Complete this
+```
+using System;
+
+class Program
+{
+	static void Main(string[] args)
+	{
+		double percent = .7553;
+		double currency = 98765.4321;
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+	}
+}
+```
+in order to print the given variables as in the result shown.
+
 *   Your code should be no more than 12 lines long
 *   You are not allowed to create new variables
 *   The target locale is `en-US.utf-8`
 *   The output of the script should be:
-    *   `Percent: 75.53%` [tip](/rltoken/8P-ckBD5Dw7FYvOg2kyRRA "tip")
+    *   `Percent: 75.53%` [tip](/https://www.dotnetperls.com/percentage "tip")
     *   followed by a new line
     *   followed by `Currency: $98,765.43`
     *   followed by a new line
@@ -576,11 +649,24 @@ Complete this [source code](/rltoken/foEqLuZu644GyfX37MNTSw "source code") in or
 
 #### [10. Copy - Cut - Paste ](./10-copy_cut_paste)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/WOeBK1z0kP2-UUYhVmVEhQ "source code").
 
-*   You can find the source code [here](/rltoken/WOeBK1z0kP2-UUYhVmVEhQ "here")
+Complete this
+```
+using System;
+
+class Program
+{
+        static void Main(string[] args)
+        {
+		string word = "Holberton";
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+		Console.WriteLine("First 3 letters: {0}", word_first_3);
+		Console.WriteLine("Last 2 letters: {0}", word_last_2);
+		Console.WriteLine("Middle word: {0}", middle_word);
+        }
+}
+```
 *   Your code should be exactly 15 lines long
 *   You are not allowed to use any loops or conditional statements
 *   `word_first_3` should contain the first 3 letters of the variable `word`
@@ -608,11 +694,24 @@ Complete this [source code](/rltoken/WOeBK1z0kP2-UUYhVmVEhQ "source code").
 
 #### [11. Create a new sentence](./11-concat_edges)
 
-Score: 0% (Checks completed: 0%)
 
-Complete this [source code](/rltoken/jATFMnzdEgJstHhRISMf7A "source code") to print `object-oriented programming in C#` followed by a new line.
 
-*   You can find the source code [here](/rltoken/jATFMnzdEgJstHhRISMf7A "here")
+Complete this
+```
+using System;
+
+class Program
+{
+	static void Main(string[] args)
+	{
+		string str = "C# (pronounced \"See Sharp\") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.";
+		// YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE.
+		Console.WriteLine(str);
+        }
+}
+```
+to print `object-oriented programming in C#` followed by a new line.
+
 *   Your code should be exactly 11 lines long
 *   You are not allowed to use any loops or conditional statements
 *   You are not allowed to create new variables
@@ -643,7 +742,7 @@ Complete this [source code](/rltoken/jATFMnzdEgJstHhRISMf7A "source code") to pr
 
 #### [12. Hello, Error](./100-hello_error)
 
-Score: 0% (Checks completed: 0%)
+
 
 Write a C# script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19` followed by a new line.
 
