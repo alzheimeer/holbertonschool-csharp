@@ -22,6 +22,6 @@ class VectorMath
             return (vector3);
         }
         else
-            return double[] { -1 };
+            return new double[] { -1 };
     }
 }
