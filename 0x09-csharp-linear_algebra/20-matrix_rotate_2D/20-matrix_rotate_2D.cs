@@ -15,7 +15,7 @@ class MatrixMath
 		int col = matrix.GetLength(1);
         double[,] MT = {{-1}};
 
-		if (row == col)
+		if (row == 2)
 		{
 			double[,] transformedPoint = new double[2, col];
 			for (int i = 0; i < row; i++)
