@@ -1,34 +1,29 @@
 ﻿using System;
 
-///<summary>Class for matrix math</summary>
+///<summary>Class matrixmath</summary>
 class MatrixMath
 {
-	///<summary>calcuating matrix rotation</summary>
-	///<return>the result matrix or matrix containing -1</return>
+	///<summary>matrix rotation</summary>
+	///<return>transformedPoint</return>
 	public static double[,] Rotate2D(double[,] matrix, double angle)
 	{
-		double[,] rotation = {
+		double[,] rotationMatrix = {
 			{Math.Cos(angle), -Math.Sin(angle)},
 			{Math.Sin(angle), Math.Cos(angle)}
 		};
-		int m_row = matrix.GetLength(0);
-		int m_col = matrix.GetLength(1);
+		int row = matrix.GetLength(0);
+		int col = matrix.GetLength(1);
+        double[,] MT = {{-1}};
 
-		if (2 == m_row)
+		if (row == 2)
 		{
-			double[,] result = new double[2, m_col];
-			for (int i = 0; i < m_row; i++)
-			{
+			double[,] transformedPoint = new double[2, col];
+			for (int i = 0; i < row; i++)
 				for (int j = 0; j < 2; j++)
-				{
-					for (int k = 0; k < m_col; k++)
-					{
-						result[i, j] += Math.Round(rotation[i, k] * matrix[k, j]);
-					}
-				}
-			}
-			return result;
+					for (int k = 0; k < col; k++)
+						transformedPoint[i, j] += Math.Round(rotationMatrix[i, k] * matrix[k, j]);
+			return transformedPoint;
 		}
-		return new double[,] { { -1 } };
+		return MT;
 	}
 }
