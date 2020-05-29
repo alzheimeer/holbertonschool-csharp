@@ -15,7 +15,7 @@ class MatrixMath
 		for (int i = 0; i < 2; i++)
 			for (int j = 0; j < 2; j++)
 				for (int k = 0; k < 2; k++)
-					transformedPoint[i, j] += Math.Round(matrix[i, k] * rotationMatrix[k, j], 2);
+					transformedPoint[i, j] = Math.Round(transformedPoint[i, j] + (matrix[i, k] * rotationMatrix[k, j]), 2);
 		return transformedPoint;
 	}
 }

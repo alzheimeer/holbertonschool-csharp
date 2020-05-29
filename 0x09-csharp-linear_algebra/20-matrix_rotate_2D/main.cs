@@ -7,7 +7,7 @@ class Program
         double[,] matrix = { { 1, 2 }, { 3, 4 } };
         double[,] result;
         
-        result = MatrixMath.Rotate2D(matrix, -1.57);
+        result = MatrixMath.Rotate2D(matrix, 2);
 
         for (int i = 0; i < result.GetLength(0); i++)
         {
