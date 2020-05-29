@@ -5,7 +5,7 @@ class VectorMath
 {
 	///<summary>cross product of two vectors</summary>
 	///<return>array or array with -1</return>
-public static double[] CrossProduct(double[] vector1, double[] vector2)
+    public static double[] CrossProduct(double[] vector1, double[] vector2)
     {   
         if (vector1.Length != 3 || vector2.Length != 3)
             return new double[] {-1};
