@@ -1,6 +1,6 @@
 ﻿using System;
-
-/// <summary>Class matrix</summary>
+//I was lazy SOrry jajajaajajaj
+/// /// <summary>Class matrix</summary>
 class MatrixMath
 {
     /// <summary>Inverse a matrix</summary>
