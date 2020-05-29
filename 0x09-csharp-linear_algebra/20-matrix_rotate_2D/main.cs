@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix = { { 1, 2, 1 }, { 4, 3, 4 } };
+        double[,] matrix = { { 1, 2 }, { 3, 4 } };
         double[,] result;
         
         result = MatrixMath.Rotate2D(matrix, -1.57);
