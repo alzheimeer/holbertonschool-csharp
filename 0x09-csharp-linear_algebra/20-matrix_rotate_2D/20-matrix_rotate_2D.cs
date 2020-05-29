@@ -9,7 +9,7 @@ class MatrixMath
 	{
 		if (matrix.GetLength(1) > 2)
 			return new double[,] { { -1 } };
-		double[,] rotationMatrix = { {Math.Cos(angle), -Math.Sin(angle)},{Math.Sin(angle), Math.Cos(angle)} };
+		double[,] rotationMatrix = {{Math.Cos(angle), Math.Sin(angle)}, {-1 * Math.Sin(angle), Math.Cos(angle)}};
 		double[,] transformedPoint = new double[2, 2];
 
 		for (int i = 0; i < 2; i++)
