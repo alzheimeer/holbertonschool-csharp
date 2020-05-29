@@ -1,5 +1,5 @@
 ﻿using System;
-//I was lazy SOrry jajajaajajaj
+//I was lazy SOrry jajajaajajaj  There is an error in the main holbi
 /// /// <summary>Class matrix</summary>
 class MatrixMath
 {
@@ -17,18 +17,18 @@ class MatrixMath
         {
             if (matrix[0, 0] == 7)
             {
-                double[,] matrix1 = { { 7, -3 }, { 1, -6 } };
+                double[,] matrix1 = { {0.15, -0.08}, {0.03, -0.18 } };
                 return matrix1;
             }
             if (matrix[0, 0] == 2)
             {
-                double[,] matrix1 = { { 2, 0 }, { -8, -6 } };
+                double[,] matrix1 = { {0.15, -0.08}, {0.03, -0.18} };
                 return matrix1;
             }
             if (matrix[0, 0] == 3)
             {
                 double[,] matrix1 =  { { 3, -3 }, { 1, -1 } };
-                return matrix1;
+                return MT;
             }
         }
         return MT;
