@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix = { { 1, 2 }, { 3, 4 } };
+        double[,] matrix = { { 1, 2, 3 }, { 0, 3, 4 }, { -4, 0, 1 } };
         double[,] result;
         
-        result = MatrixMath.Shear2D(matrix, 'y', 3.45);
+        result = MatrixMath.Shear2D(matrix, 'x', 1);
         
         for (int i = 0; i < result.GetLength(0); i++)
         {

@@ -9,6 +9,9 @@ class MatrixMath
         double[,] newMatrix = new double[2,2];
         double[,] MT = {{-1}};
         double[,] shearMatrix;
+        
+        if (matrix.GetLength(0) != 2 && matrix.GetLength(1) != 2)
+            return MT;
         if (direction == 'x' || direction == 'y')
         {
             if (direction == 'x')
@@ -18,7 +21,6 @@ class MatrixMath
         }
         else
             return MT;
-        
         for (int i = 0; i < 2; i++)
 			for (int j = 0; j < 2; j++)
 				for (int k = 0; k < 2; k++)
