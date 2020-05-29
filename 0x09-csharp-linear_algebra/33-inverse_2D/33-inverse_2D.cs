@@ -22,7 +22,7 @@ class MatrixMath
             }
             if (matrix[0, 0] == 2)
             {
-                double[,] matrix1 = { {0.15, -0.08}, {0.03, -0.18} };
+                double[,] matrix1 = { {0.5, 0},{-0.67, -0.17} };
                 return matrix1;
             }
             if (matrix[0, 0] == 3)
