@@ -13,12 +13,7 @@ class Shape
 class Rectangle : Shape
 {
     private int width;
-    private int height;
-
-
-
-
-    ///<summary> public property Width / get: retrieve width / set: set width or exception</summary>
+    private int height;    ///<summary> public property Width / get: retrieve width / set: set width or exception</summary>
     public int Width
     {
         get

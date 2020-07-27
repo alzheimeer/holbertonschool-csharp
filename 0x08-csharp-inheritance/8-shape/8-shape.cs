@@ -83,9 +83,4 @@ class Square : Rectangle
 
         }
     }
-
-
-
-
-
 }

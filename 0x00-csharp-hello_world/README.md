@@ -36,11 +36,6 @@ a language with a purpose similar to Java bytecode
 *	What is CLR?
 1. Common Language Runtime
 
-
-
-
-
-
 _For this project, students are expected to look at these concepts:_
 
 
@@ -729,11 +724,6 @@ to print `object-oriented programming in C#` followed by a new line.
 *   GitHub repository: `holbertonschool-csharp`
 *   Directory: `0x00-csharp-hello_world`
 *   File: `11-concat_edges/, 11-concat_edges/11-concat_edges.csproj, 11-concat_edges/11-concat_edges.cs`
-
-
-
-
-
 #### 11\. Create a new sentence
 
 
