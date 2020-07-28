@@ -3,36 +3,26 @@
 ///<summary>Class for que opperations</summary>
 class Queue<T>
 {
-    public Node head;
-    public Node tail;   
-    public int count;
-    
-    ///<summary>Check if its a queue type</summary>
-	///<return>returns a Queue type</return>
-	public Type CheckType()
+	//Setting node for queues
+	public class Node
 	{
-		return typeof(T);
+		private T value;
+		public Node next = null;
+
+		public Node(T stri)
+		{
+			value = stri;
+		}
 	}
 
-    
-    ///<summary>public class called Node with two properties</summary>
-    public class Node
-    {
-        public T value;
-        public Node next = null;
-        // A constructor with one argument.
-        public Node(T inp)
-        {
-            value = inp;
-        }
-    }
-   
-    
-    /// <param name="val">The value to be added in a new node</param>
-    ///<summary>Add new node at the end</summary>
-    public void Enqueue(T inp)
-    {
-        Node newnode = new Node(inp);
+	public Node head;
+	public Node tail;
+	public int count;
+
+	///<summary>Add new node at the end</summary>
+	public void Enqueue(T value)
+	{
+		Node newnode = new Node(value);
 		if (head == null)
 		{
 			head = newnode;
@@ -44,10 +34,18 @@ class Queue<T>
 			tail = newnode;
 		}
 		count++;
-    }
-    ///<summary>return count the nodes</summary>
-    public int Count()
-    {
-        return count;
-    }
+	}
+
+	///<summary>Add new node at the end</summary>
+	public int Count()
+	{
+		return count;
+	}
+
+	///<summary>Check if its a queue type</summary>
+	///<return>returns a Queue type</return>
+	public Type CheckType()
+	{
+		return typeof(T);
+	}
 }
