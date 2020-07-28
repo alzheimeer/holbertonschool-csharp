@@ -1,9 +1,19 @@
 ﻿using System;
 
 ///<summary>Class for que opperations</summary>
+/// <typeparam name="T">param type</typeparam>
 class Queue<T>
 {
-	//Setting node for queues
+
+    ///<summary>Check if its a queue type</summary>
+	///<return>returns a Queue type</return>
+	public Type CheckType()
+	{
+		return typeof(T);
+	}
+	
+    
+     /// <summary>Class Node inside queue class</summary>
 	public class Node
 	{
 		private T value;
@@ -42,10 +52,5 @@ class Queue<T>
 		return count;
 	}
 
-	///<summary>Check if its a queue type</summary>
-	///<return>returns a Queue type</return>
-	public Type CheckType()
-	{
-		return typeof(T);
-	}
+
 }
