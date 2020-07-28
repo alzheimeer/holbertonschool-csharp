@@ -18,21 +18,21 @@ class Queue<T>
     ///<summary>public class called Node with two properties</summary>
     public class Node
     {
-        private T value = default(T);
+        public T value;
         public Node next = null;
         // A constructor with one argument.
-        public Node(T input)
+        public Node(T inp)
         {
-            value = input;
+            value = inp;
         }
     }
    
     
-    
+    /// <param name="val">The value to be added in a new node</param>
     ///<summary>Add new node at the end</summary>
-    public void Enqueue(T value)
+    public void Enqueue(T inp)
     {
-        Node newnode = new Node(value);
+        Node newnode = new Node(inp);
 		if (head == null)
 		{
 			head = newnode;
@@ -50,7 +50,4 @@ class Queue<T>
     {
         return count;
     }
-
-
-
 }
