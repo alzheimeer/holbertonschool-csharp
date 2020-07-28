@@ -55,7 +55,7 @@ class Queue<T>
 	}
 
 
-  ///<summary>Add deleting the last node</summary>
+  ///<summary> deleting the firts node</summary>
 	public T Dequeue()
 	{
 		if (head == null)
@@ -72,7 +72,7 @@ class Queue<T>
 		}
 	}
 
-    ///<summary>Add deleting the last node</summary>
+    ///<summary>return value firts node</summary>
 	public T Peek()
 	{
 		if (head == null)
