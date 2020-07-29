@@ -1,26 +1,13 @@
 ﻿using System;
 
-/// <summary>
-/// Create a public class
-/// </summary>
-public class Player
+/// <summary>Create a public class</summary>
+class Player
 {
-    /// <summary>
-    /// propertys not be able to change or access
-    /// </summary>
-    protected string name;
-    /// <summary>
-    /// propertys not be able to change or access
-    /// </summary>
-    protected float maxHp;
-    /// <summary>
-    /// propertys not be able to change or access
-    /// </summary>
-    protected float hp;
+    string name;
+    float maxHp;
+    float hp;
 
-    /// <summary>
-    /// Constructor
-    /// </summary>
+    /// <summary> Constructor </summary>
     /// <param name="name"></param>
     /// <param name="maxHp"></param>
     public Player(string name = "Player", float maxHp = 100f)
@@ -37,12 +24,10 @@ public class Player
             this.maxHp = maxHp;
     }
 
-    /// <summary>
-    /// Method
-    /// </summary>
+    /// <summary>Method</summary>
     public void PrintHealth()
     {
-        Console.WriteLine("{0} has {1} / {2} health", name, hp, maxHp);
+        Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
 }
