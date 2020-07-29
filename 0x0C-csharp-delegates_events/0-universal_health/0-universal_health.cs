@@ -3,13 +3,19 @@
 /// <summary>
 /// Create a public class
 /// </summary>
-class Player
+public class Player
 {
     /// <summary>
     /// propertys not be able to change or access
     /// </summary>
     protected string name;
+    /// <summary>
+    /// propertys not be able to change or access
+    /// </summary>
     protected float maxHp;
+    /// <summary>
+    /// propertys not be able to change or access
+    /// </summary>
     protected float hp;
 
     /// <summary>
