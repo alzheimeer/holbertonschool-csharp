@@ -38,13 +38,13 @@ class Door : Base, IInteractive
 
     public Door(string n = "Door")
 	{
-		this.name = n;
+		name = n;
 	}
 
     /// <summary> Takes place when the object interacts with something </summary>
 	public void Interact()
 	{
-        	Console.WriteLine("You try to open the {0}. It's locked", this.name);
+        	Console.WriteLine("You try to open the {0}. It's locked.", name);
 	}
 
   
