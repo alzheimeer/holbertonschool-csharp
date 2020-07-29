@@ -3,13 +3,13 @@
 /// <summary>Create a public class</summary>
 class Player
 {
-    string name;
-    float maxHp;
-    float hp;
+    private string name;
+    private float maxHp;
+    private float hp;
 
     /// <summary> Constructor </summary>
-    /// <param name="name"></param>
-    /// <param name="maxHp"></param>
+    /// <param name="name">The name of the player</param>
+    /// <param name="maxHp">The player's maximum hit points</param>
     public Player(string name = "Player", float maxHp = 100f)
     {
 
