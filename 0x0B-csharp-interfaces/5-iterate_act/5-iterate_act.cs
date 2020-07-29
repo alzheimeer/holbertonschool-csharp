@@ -140,19 +140,21 @@ class RoomObjects
     /// <summary> Function to check a list of items in a room a proceed acording to its type </summary>
 	public static void IterateAction(List<Base> roomObjects, Type type)
 	{
-		foreach (Base obj in roomObjects)
+		foreach (Base item in roomObjects)
 		{
-			if (type == typeof(IInteractive) && obj is IInteractive)
+
+
+			if (type == typeof(IInteractive) && item is IInteractive)
 			{
-				((IInteractive)obj).Interact();
+				((IInteractive)item).Interact();
 			}
-			else if (type == typeof(IBreakable) && obj is IBreakable)
+			else if (type == typeof(IBreakable) && item is IBreakable)
 			{
-				((IBreakable)obj).Break();
+				((IBreakable)item).Break();
 			}
-			else if (type == typeof(ICollectable) && obj is ICollectable)
+			else if (type == typeof(ICollectable) && item is ICollectable)
 			{
-				((ICollectable)obj).Collect();
+				((ICollectable)item).Collect();
 			}
 		}
 	}
