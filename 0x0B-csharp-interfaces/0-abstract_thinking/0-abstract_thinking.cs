@@ -9,6 +9,6 @@ abstract class Base
     /// <summary>Function ToString override</summary>
     public override string ToString()
     {
-            return (name + " is a " + GetType().Name);
+            return (this.name + " is a " + this.GetType().Name);
     }
 }
