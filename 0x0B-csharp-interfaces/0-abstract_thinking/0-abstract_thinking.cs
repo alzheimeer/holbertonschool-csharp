@@ -1,12 +1,18 @@
 ﻿using System;
 
-///<summary>Base class</summary>
-abstract class Base
+/// <summary>
+/// Abstract class Base
+/// </summary>
+public abstract class Base
 {
-	public string name = "";
+  /// <summary>
+  /// given name of the object
+  /// </summary>
+  public string name;
 
-	public override string ToString()
-	{
-		return String.Format("{0} is a {1}", name, this.GetType().Name);
-	}
+  /// <summary>
+  /// Function ToString override
+  /// </summary>
+  /// <returns> returns a new string with name and its type</returns>
+  public override string ToString() => $"{name} is a {this.GetType()}";
 }
