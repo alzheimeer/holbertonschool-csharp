@@ -14,7 +14,7 @@ class Player
     {
 
         this.name = name;
-        this.hp = maxHp;
+        this.hp = this.maxHp;
         if (maxHp < 0)
         {
             this.maxHp = 100f;
