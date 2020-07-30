@@ -1,35 +1,39 @@
-﻿using System;
+﻿
+using System;
 
-/// <summary> Player Class which handles the Player attributes and actions </summary>
+/// <summary>Create a public class</summary>
 class Player
 {
-    string name;
-    float maxHp;
-    float hp;
+    private string name;
+    private float maxHp;
+    private float hp;
 
-    /// <summary> Player's Constructor </summary>
+    /// <summary> Constructor </summary>
+    /// <param name="name">The name of the player</param>
+    /// <param name="maxHp">The player's maximum hit points</param>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        this.name = name;
-        if (maxHp > 0) this.maxHp = maxHp;
-        else
+        if (maxHp <= 0f)
         {
             this.maxHp = 100f;
-            System.Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
+            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
+        else
+            this.maxHp = maxHp;
+        this.name = name;
         this.hp = this.maxHp;
     }
 
-    /// <summary> Prints the Player's current health </summary>
+    /// <summary> Prints the player's health. </summary>
     public void PrintHealth()
     {
-        System.Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
+        Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
-    /// <summary> Delegate which handles the Health </summary>
+    /// <summary> Delegate </summary>
     delegate void CalculateHealth(float damage);
 
-    /// <summary> Handles Damage Health and apllies it to the hp </summary>
+    /// <summary> Handles Damage </summary>
     public void TakeDamage(float damage)
     {
         if (damage < 0f)
@@ -42,7 +46,7 @@ class Player
         this.hp -= damage;
     }
 
-    /// <summary> Handles Healing and applies it to the hp </summary>
+    /// <summary> Handles Healing </summary>
     public void HealDamage(float heal)
     {
         if (heal < 0f)
