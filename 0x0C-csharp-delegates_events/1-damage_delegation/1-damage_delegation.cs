@@ -1,66 +1,57 @@
 ﻿using System;
 
-/// <summary>
-/// Defines a player.
-/// </summary>
-public class Player
+/// <summary> Player Class which handles the Player attributes and actions </summary>
+class Player
 {
-    private string name;
-    private float maxHp;
-    private float hp;
+    string name;
+    float maxHp;
+    float hp;
 
-    /// <summary>
-    /// Constructor for player.
-    /// </summary>
-    /// <param name="name">The name of the player.</param>
-    /// <param name="maxHp">The player's maximum hit points.</param>
+    /// <summary> Player's Constructor </summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
-        if (maxHp <= 0f)
+        this.name = name;
+        if (maxHp > 0) this.maxHp = maxHp;
+        else
         {
             this.maxHp = 100f;
-            Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
+            System.Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default.");
         }
-        else
-            this.maxHp = maxHp;
-        this.name = name;
         this.hp = this.maxHp;
     }
-    /// <summary>
-    /// Delegate to change health.
-    /// </summary>
-    /// <param name="amt">The amount of health to be changed.</param>
-    delegate void CalculateHealth(float amt);
-    /// <summary>
-    /// Prints the player's health.
-    /// </summary>
+
+    /// <summary> Prints the Player's current health </summary>
     public void PrintHealth()
     {
-        Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
+        System.Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
-    /// <summary>
-    /// Player takes damage. Follows CalculateHealth delegate.
-    /// </summary>
-    /// <param name="damage">The amount of damage taken.</param>
+    /// <summary> Delegate which handles the Health </summary>
+    delegate void CalculateHealth(float damage);
+
+    /// <summary> Handles Damage Health and apllies it to the hp </summary>
     public void TakeDamage(float damage)
     {
-        Console.WriteLine("{0} takes {1} damage!", this.name, damage);
         if (damage < 0f)
+        {
+            System.Console.WriteLine("{0} takes 0 damage!", this.name);
             damage = 0f;
+        }
+        else
+            System.Console.WriteLine("{0} takes {1} damage!", this.name, damage);
         this.hp -= damage;
     }
 
-    /// <summary>
-    /// Player heals HP. Follows CalculateHealth delegate.
-    /// </summary>
-    /// <param name="heal">The amount of HP player heals.</param>
+    /// <summary> Handles Healing and applies it to the hp </summary>
     public void HealDamage(float heal)
     {
-        Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         if (heal < 0f)
+        {
+            System.Console.WriteLine("{0} heals 0 HP!", this.name);
             heal = 0f;
+        }
+        else
+            Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         this.hp += heal;
     }
-
 }
