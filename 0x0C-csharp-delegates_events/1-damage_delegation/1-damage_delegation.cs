@@ -1,15 +1,19 @@
 ﻿using System;
 
-/// <summary>Create a public class</summary>
-class Player
+/// <summary>
+/// Defines a player.
+/// </summary>
+public class Player
 {
     private string name;
     private float maxHp;
     private float hp;
 
-    /// <summary> Constructor </summary>
-    /// <param name="name">The name of the player</param>
-    /// <param name="maxHp">The player's maximum hit points</param>
+    /// <summary>
+    /// Constructor for player.
+    /// </summary>
+    /// <param name="name">The name of the player.</param>
+    /// <param name="maxHp">The player's maximum hit points.</param>
     public Player(string name = "Player", float maxHp = 100f)
     {
         if (maxHp <= 0f)
@@ -58,4 +62,5 @@ class Player
             heal = 0f;
         this.hp += heal;
     }
+
 }
