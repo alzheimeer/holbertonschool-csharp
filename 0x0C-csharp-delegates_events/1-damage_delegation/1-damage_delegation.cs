@@ -22,20 +22,22 @@ class Player
         this.name = name;
         this.hp = this.maxHp;
     }
-
-    /// <summary> Prints the player's health. </summary>
+    /// <summary>
+    /// Delegate to change health.
+    /// </summary>
+    /// <param name="amt">The amount of health to be changed.</param>
+    delegate void CalculateHealth(float amt);
+    /// <summary>
+    /// Prints the player's health.
+    /// </summary>
     public void PrintHealth()
     {
         Console.WriteLine("{0} has {1} / {2} health", this.name, this.hp, this.maxHp);
     }
 
-
-    /// <summary> Delegate to change health </summary>
-    /// <param name="n">The amount of health to be changed</param>
-    delegate void CalculateHealth(float n);
-
-
-    /// <summary>Player takes damage. Follows CalculateHealth delegate</summary>
+    /// <summary>
+    /// Player takes damage. Follows CalculateHealth delegate.
+    /// </summary>
     /// <param name="damage">The amount of damage taken.</param>
     public void TakeDamage(float damage)
     {
